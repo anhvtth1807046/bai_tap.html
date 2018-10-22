@@ -36,38 +36,16 @@
     <h1>Chào mừng ngày phụ nữ Việt Nam 20 tháng 10</h1>
     <p>Nhân ngày phụ nữ Việt Nam 20/10/2018, thay mặt các bạn nam lớp T1808A, Thầy gửi lời chúc tới các bạn: </p>
     <div class="celebration-name">
-        <ul id="list-name">
-            <li>Vũ Hoài Anh</li>
+        <ul>
+            <li>Vũ Thị Hoài Anh</li>
             <li>Phạm Thanh Hoa</li>
             <li>Trần Thị Thi</li>
+            <li><a href="#" id="show-more">xem thêm</a></li>
         </ul>
     </div>
-    <span class="span-view-more">
-            <a href="javascript:void(0)" id="read-more">Xem thêm</a>
-        </span>
     <blockquote>"Một ngày 20 tháng 10 vui vẻ, nhận được nhiều quà, luôn hoàn thành tốt assignment
         Thầy giao để khỏi phải học lại cũng như bị lưu ban sang lớp khác :)"</blockquote>
 </div>
-<script>
-    var celebraionNames = [
-        'Ngô Thị Ngọc Ánh',
-        'Ngô Thị Mai',
-        'Giang Thị Tình',
-        'Giang Thị Hạnh',
-        'Trần Thị Hương Ly',
-        'Đặng Danh Quảng'
-    ];
-    alert('Hoai anh');
-    var showmore = document.getElementById("read-more");
-
-    showmore.onclick = function() {
-        var listname = document.getElementById('list-name');
-        var content = "";
-        for (var i = 0; i < celebraionNames.length; i++) {
-            content += '<li>' + celebraionNames[i] + '</li>';
-        }
-        listname.innerHTML += content;
-    };
-</script>
+<script src="myjs.js"></script>
 </body>
 </html>
