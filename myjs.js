@@ -1,3 +1,5 @@
+
+
 var celebraionNames = [
     'Ngô Thị Ngọc Ánh',
     'Ngô Thị Mai',
@@ -6,14 +8,11 @@ var celebraionNames = [
     'Trần Thị Hương Ly',
     'Đặng Danh Quảng'
 ];
-alert('Hoai anh');
-var showmore = document.getElementById("show-more");
-
+var showmore=document.getElementById("show-more");
 showmore.onclick =function() {
-    var listname = document.getElementById('list-name');
-    var content = "";
+    var listname= "";
     for (var i = 0; i < celebraionNames.length; i++) {
-        content += '<li>' + celebraionNames[i] + '</li>';
+        listname += '<li>' + celebraionNames[i] + '</li>'
     }
-    showmore.innerHTML += listname;
-};
+    showmore.parentElement.innerHTML=(listname);
+}
